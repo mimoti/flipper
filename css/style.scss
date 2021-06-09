@@ -1,0 +1,785 @@
+// 変数設定
+$base-color: #f7f7f3;
+$main-color: #146439;
+$font-menuTitle: 60px;
+$font-title: 36px;
+$font-normal: 24px;
+$font-middle: 16px;
+$font-small: 14px;
+$font-red: #e71f19;
+$contents-color: #f2fdfa;
+$menu-bordercolor: #8a605f;
+$menu-color: #952c2b;
+
+
+// 共通
+// -----------------------
+.page {
+  background-image: url(../images/bg1.png);
+  background-repeat: repeat;
+  font-family: 'Kosugi Maru', "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+}
+a {
+  color: #666;
+}
+li {
+  list-style-type: none;
+}
+
+
+
+// ヘッダー
+// -----------------------
+header {
+  position: fixed;
+  z-index: 2; //固定表示のため一番前へ来るように設定
+  width: 100%;
+  background-color: #fff;
+  height: 80px;
+  .inner {
+    width: 960px;
+    margin: 0 auto;
+    position: relative;
+    h1 {
+      position: absolute;
+      top: 10px;
+      left: 0;
+    }
+    nav {
+      position: absolute;
+      top: 33px;
+      right: 0;
+      li {
+        float: left;
+        margin-left: 30px;
+        a {
+          text-decoration: none;
+          font-size: $font-small;
+          position: relative;
+          &:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -10px;
+            width: 0%;
+            height: 2px;
+            background: #146439;
+            transition: all 0.4s;
+          }
+        }
+        &:hover a:after {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+
+
+// フッター
+// -----------------------
+
+footer {
+  background-color: #fff;
+  height: 450px;
+  text-align: center;
+  position: relative;
+
+  &:before {  //境界線がイラスト風になるように画像を挿入
+    content: '';
+    width: 100%;
+    height: 10px;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: -1px;
+    background-image: url(../images/sec2-bgbefore.png);
+    background-repeat: repeat-x;
+  }
+
+  img {
+    margin: 100px 0 50px;
+  }
+
+  address {
+    line-height: 2em;
+    margin-bottom: 40px;
+  }
+
+  p {
+    font-size: $font-small;
+  }
+  i {
+    position: fixed;
+    font-size: 50px;
+    bottom: 50px;
+    right: 50px;
+    display: none;
+   }
+
+}
+
+
+
+
+//トップページ----------------------------------------------
+
+main {
+  padding-top: 80px;
+
+  // メイン
+  // -----------------------
+  .main-image {
+    img {
+      width: 100%;
+    }
+  }
+  section {
+    padding: 90px 0 100px;
+    position: relative; //イラストをsectionの境界に配置するため
+    .inner {
+      width: 960px;
+      margin: 0 auto;
+      overflow: hidden;
+      h2 {
+        font-size: $font-title;
+        text-align: center;
+        margin-bottom: 70px;
+      }
+      .textImage {
+        text-align: center;
+      }
+      // 営業時間のお知らせ
+      .text-imfo {
+        margin-right: 300px;  //画面の中心から左に寄せる
+      }
+      img.illustbuilding {
+        float: left;
+      }
+      .openingHours {
+        width: 430px;
+        float: right;
+        line-height: 40px;
+        ul {
+          margin: 40px 0;
+          font-size: $font-normal;
+          li {
+            color: #333;
+            .opentime {
+              margin-left: 150px;
+            }
+            .ordertime {
+              margin-left: 57px;
+            }
+            .closetime {
+              margin-left: 140px;
+            }
+            .holiday {
+              margin-left: 125px;
+            }
+          }
+        }
+        p {
+          color: #666;
+          font-size: 20px;
+        }
+      }
+
+
+      // 店内の様子
+      .text-photo {
+        margin-right: 180px;  //画面の中心から左に寄せる
+      }
+      figure {
+        text-align: center;
+      }
+
+
+      // 支払い方法
+      .text-pay {
+        margin-right: 180px;  //画面の中心から左に寄せる
+      }
+      p.center {
+        color: #333;
+        text-align: center;
+        line-height: 2em;
+        font-size: $font-normal;
+        strong {
+          font-size: 30px;
+          color: $font-red;
+        }
+        span {
+          color: #1a4a9e;
+        }
+      }
+    }
+
+
+    //イラスト配置
+    img.dolphin1 {
+      position: absolute;
+      left: 100px;
+      bottom: -30px;
+      z-index: 1;
+    }
+
+    img.dolphin2 {
+      position: absolute;
+      right: 100px;
+      bottom: -30px;
+      z-index: 1;
+    }
+
+    img.illustrun {
+      position: absolute;
+      left: 80px;
+      bottom: -30px;
+      z-index: 1;
+    }
+  }
+
+
+ //店内の様子
+  .sec2 {
+    clear: both;
+    background-image: url(../images/bg2.png);
+    background-repeat: repeat;
+    position: relative;
+
+    &:before {  //境界線がイラスト風になるように画像を挿入
+      content: '';
+      width: 100%;
+      height: 10px;
+      display: block;
+      position: absolute;
+      left: 0;
+      top: -1px;
+      background-image: url(../images/sec2-bgbefore.png);
+      background-repeat: repeat-x;
+    }
+
+    &:after {  //境界線がイラスト風になるように画像を挿入
+      content: '';
+      width: 100%;
+      height: 10px;
+      display: block;
+      position: absolute;
+      left: 0;
+      bottom: -3px;
+      background-image: url(../images/sec2-bgafter.png);
+      background-repeat: repeat-x;
+    }
+
+    //スライドショー
+    .sliderArea {
+      max-width: 100%;
+      margin: 0 auto;
+      padding: 0;
+      position: relative;
+    }
+    .sliderArea.w300 {
+      max-width: 300px;
+    }
+    .slick-slide {
+      margin: 0 5px;
+    }
+    .slick-slide img {
+      width: 100%;
+      height: auto;
+    }
+    .slick-prev, .slick-next {
+      z-index: 1;
+    }
+    .slide-arrow:before, .slick-next:before {
+      color: #000;
+    }
+    .slick-slide {
+      transition: all ease-in-out .3s;
+      opacity: .2;
+    }
+    .slick-active {
+      opacity: 1;
+    }
+    .slick-current {
+      opacity: 1;
+    }
+    .thumb .slick-slide:hover {
+      opacity: .7;
+    }
+    
+    .slick-dots li button:hover:before,
+    .slick-dots li button:focus:before
+    {
+        opacity: 1;
+        color: green; /* hover時の色を変更 */
+    }
+    .slick-dots li button:before
+    {
+        font-family: 'slick';
+        font-size: 6px;
+        line-height: 20px;
+    
+        position: absolute;
+        top: 0;
+        left: 0;
+    
+        width: 20px;
+        height: 20px;
+    
+        /* 元のcontentプロパティの値だとfont-sizeを変更した際に位置がずれてしまうので値を変更 */
+        /* content: '•'; */
+        content: '●';
+        text-align: center;
+    
+        opacity: .25;
+        color: black;
+    
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    .slick-dots li.slick-active button:before {
+        opacity: 1;
+        color: $main-color; /* active時の色を変更 */
+    }
+
+    .far {
+      font-size: 80px;
+      color: $main-color;
+      font-weight: bold;
+    }
+    .fa-hand-point-left {
+      position: absolute;
+      bottom: 180px;
+      left: 100px;
+      z-index: 1;
+    }
+    .fa-hand-point-right {
+      position: absolute;
+      bottom: 180px;
+      right: 100px;
+    }
+    button {
+      size: 100px;
+    }
+  }
+    
+}
+
+
+
+//コンテンツページ内共通
+#menu, #access {
+  .menu-mainimage {
+    background-color: $contents-color;
+    height: 250px;
+    position: relative;
+    .inner {
+      width: 500px;
+      height: 250px;
+      margin: 0 auto;
+      position: relative;
+      h2 {
+        text-align: center;
+        line-height: 250px;
+        font-size: $font-title;
+      }
+      .monstera {
+        position: absolute;
+        top: 45px;
+        left: 0;
+      }
+      img.text {
+        position: absolute;
+        top: 60px;
+        left: 120px;
+      }
+    }
+  }
+
+}
+
+
+
+
+//メニューページ----------------------------------------------
+#menu {
+  main {
+    nav {
+      background-color: #ccc;
+      height: 60px;
+      margin-bottom: 150px;
+      ul {
+        overflow: hidden;
+        line-height: 58px;
+        width: 228px;
+        margin: 0 auto;
+        li {
+          float: left;
+          font-size: $font-normal;
+          a {
+            text-decoration: none;
+            display: block;
+            &:hover {
+              color: #000;
+            }
+          }  
+        }
+        li.food {
+          margin-right: 60px;
+          border-bottom: 3px dotted #333;
+          a {
+            color: #000;
+          }
+        }  
+      }
+  
+    }
+    section {
+      width: 960px;
+      margin: 0 auto 200px;
+      padding: 0;
+      opacity: 0;  //スクロール
+
+      h3 {
+        font-family: 'Rubik', "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+        font-size: $font-menuTitle;
+        color: $menu-color;
+        border-bottom: 5px solid $menu-bordercolor;
+        padding: 0 0 10px 20px;
+      }
+      .inner {
+        width: 920px;
+        margin: 30px 20px 0;
+        .annotation {
+          color: #666;
+          margin-bottom: 30px;
+          line-height: 1.5em;
+        }
+        .lobAnnotation {
+          color: $font-red;
+        }
+        .foodIllust {
+          margin-bottom: 30px;
+          text-align: center;
+        }
+        .filetmenu, .ribmenu, .lobmenu {
+         margin-left: 50px; 
+        }
+
+        //ぶるぶるホバー
+        .buruburu-hover:hover {
+            animation: hurueru .8s  infinite;
+        }
+        @keyframes hurueru {
+            0% {transform: translate(0px, 2px) rotateZ(0deg)}
+            50% {transform: translate(0px, 2px) rotateZ(-1deg)}
+            100% {transform: translate(0px, 2px) rotateZ(1deg)}
+        }
+
+
+
+
+        .cheesemenu {
+          margin-left: 70px;
+        }
+        .lobSingle {
+          margin-bottom: 40px;
+        }
+        .lobSteakmenu {
+          margin-left: 150px;
+        }
+        .cheeseinner {
+          width: 430px;
+          float: left;
+          .cheeseHamburger {
+            margin-bottom: 30px;
+          }
+        }
+        .childinner {
+          float: right;
+          margin-top: 240px;
+        }
+        .soup {
+          clear: both;
+          display: inline-block;
+          margin-top: 30px;
+        }  
+        .cookname {
+          font-size: $font-normal;
+          margin-bottom: 30px;
+          .price {
+            color: $menu-color;
+          }
+          .translation {
+            font-size: $font-middle;
+          }
+          .annotation {
+            font-size: 18px;
+          }
+        }
+        .bottomP {
+          margin-bottom: 60px;
+        }
+        h4 {
+          font-size: 20px;
+          border-bottom: 2px solid $menu-bordercolor;
+          padding-bottom: 5px;
+          margin-bottom: 20px;
+        }
+        .howToBake {
+          width: 260px;
+          float: left;
+          margin-right: 70px;
+          margin-bottom: 50px;
+          font-size: 20px;
+          h5 {
+            font-size: $font-normal;
+            margin-bottom: 10px;
+            color: $menu-color;
+            font-weight: bold;
+          }
+          p {
+            color: #666;
+            line-height: 1.2em;
+          }
+        }
+        .jikkuri {
+          margin-right: 0;
+        }
+        .last {
+          clear: both;
+          font-size: $font-small;
+        }
+        .ribAnnotation {
+          overflow: hidden;
+          border-top: 2px solid $menu-bordercolor;  
+
+          .ribInner {
+            font-size: 18px;
+            width: 430px;
+            float: left;
+            margin-top: 20px;
+          }
+        }
+        .eg {
+          line-height: 24px;
+          margin-right: 60px;
+          font-family: 'Rubik', "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+
+        }
+        .jp {
+          line-height: 28px;
+          span {
+            color: $font-red;
+          }
+        }
+        figure {
+          float: right;
+          margin-right: 50px;
+        }
+        .bottomnone {
+          margin-bottom: 0;
+        }
+      }
+    }
+    section.on {
+      opacity: 1;
+    }
+
+    //イラスト配置
+    #filetMignon, #ribSteak, #lobster, #lobsterSteak {
+      .allergen {
+        position: absolute;
+        top: -10px;
+        right: 20px;
+      }
+    }
+    #filetMignon {
+      position: relative;
+      .beef {
+        position: absolute;
+        top: 90px;
+        right: 0;
+      }
+      .fm-allergen {
+        position: absolute;
+        bottom: 535px;
+        right: 40px;
+      }
+      .palmTree {
+        position: absolute;
+        bottom: 215px;
+        right: 60px;
+      }
+    }
+    #ribSteak {
+      position: relative;
+      .beef {
+        position: absolute;
+        top: 90px;
+        right: 0;
+      }
+      .rs-allergen {
+        position: absolute;
+        bottom: 280px;
+        right: 40px;
+      }
+      .bicycle {
+        position: absolute;
+        bottom: 140px;
+        right: 110px;
+      }
+    }
+    #lobster {
+      position: relative;
+      .lobSet-allergen {
+        position: absolute;
+        bottom: 400px;
+        left: 400px;
+      }
+      .lobSingle-allergen {
+        position: absolute;
+        bottom: 15px;
+        left: 400px;
+      }
+    }
+    #lobsterSteak {
+      position: relative;
+      .specialMenu {
+        position: absolute;
+        top: 100px;
+        right: 100px;
+      }
+      .lobSteak-allergen {
+        position: absolute;
+        bottom: 300px;
+        right: 110px;
+      }
+    }
+    #cheese {
+      margin-bottom: 150px;
+      position: relative;
+      .haveANiceDay {
+        position: absolute;
+        bottom: 470px;
+        right: 200px;
+      }
+      .chs-allergen {
+        position: absolute;
+        top: 850px;
+        right: 200px;
+      }
+      .ch-allergen {
+        position: absolute;
+        bottom: 265px;
+        left: 320px;
+      }
+      .soup-allergen {
+        position: absolute;
+        bottom: 125px;
+        left: 220px;
+      }
+      .fPotato-allergen {
+        position: absolute;
+        bottom: 20px;
+        left: 310px;
+      }
+      .cLunch-allergen {
+        position: absolute;
+        bottom: 10px;
+        right: 195px;
+      }
+      .girl {
+        position: absolute;
+        bottom: -150px;
+        right: -37px;
+      }
+    }
+  }
+}
+
+
+
+//アクセスページ----------------------------------------------
+#access {
+  section {
+    width: 960px;
+    margin: 100px auto 100px;
+    padding: 0;
+    text-align: center;
+    position: relative;  //イラスト配置用
+    img {
+      margin-bottom: 100px;
+    }
+    iframe {
+      margin-bottom: 20px;
+      width: 100%;
+    }
+    p {
+      margin-bottom: 60px;
+      font-size: $font-normal;
+    }
+
+
+    //イラスト配置
+    .woman {
+      position: absolute;
+      top: 50px;
+      right: 80px;
+    }
+    .man1 {
+      position: absolute;
+      top: 510px;
+      left: 80px;
+    }
+    .walkingDog {
+      position: absolute;
+      bottom: -210px;
+      left: 60px;
+      z-index: 1;
+    }
+    .man2 {
+      position: absolute;
+      bottom: -300px;
+      right: 100px;
+      z-index: 1;
+    }
+
+  }
+}
+
+
+
+//スライドショー
+.bx-wrapper {
+  box-shadow: none;
+  border: none;
+  left: 0;
+  background-color: transparent;
+  margin: 0 auto;
+ }
+
+
+
+//ローディング画面
+.start {
+	background: #FFF;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 9000;
+  text-align: center;
+}
+.start p {
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	display: none;
+	z-index: 9999;
+	width: 280px;
+}
+

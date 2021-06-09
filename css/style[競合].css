@@ -1,0 +1,40 @@
+body {
+  background-color: #f7f7f3;
+}
+
+a {
+  color: #666;
+}
+
+header {
+  background-color: #fff;
+  height: 80px;
+}
+
+header .inner {
+  width: 960px;
+  margin: 0 auto;
+  position: relative;
+}
+
+header .inner h1 {
+  position: absolute;
+  top: 10px;
+  left: 0;
+}
+
+header .inner nav {
+  position: absolute;
+  top: 33px;
+  right: 0;
+}
+
+header .inner nav ul li {
+  float: left;
+  margin-left: 30px;
+}
+
+header .inner nav ul li a {
+  text-decoration: none;
+}
+/*# sourceMappingURL=style.css.map */

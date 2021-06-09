@@ -1,0 +1,839 @@
+@charset "UTF-8";
+.page {
+  background-image: url(../images/bg1.png);
+  background-repeat: repeat;
+  font-family: 'Kosugi Maru', "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+}
+
+a {
+  color: #666;
+}
+
+li {
+  list-style-type: none;
+}
+
+header {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  background-color: #fff;
+  height: 80px;
+}
+
+header .inner {
+  width: 960px;
+  margin: 0 auto;
+  position: relative;
+}
+
+header .inner h1 {
+  position: absolute;
+  top: 10px;
+  left: 0;
+}
+
+header .inner nav {
+  position: absolute;
+  top: 33px;
+  right: 0;
+}
+
+header .inner nav li {
+  float: left;
+  margin-left: 30px;
+}
+
+header .inner nav li a {
+  text-decoration: none;
+  font-size: 14px;
+  position: relative;
+}
+
+header .inner nav li a:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 0%;
+  height: 2px;
+  background: #146439;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+header .inner nav li:hover a:after {
+  width: 100%;
+}
+
+footer {
+  background-color: #fff;
+  height: 450px;
+  text-align: center;
+  position: relative;
+}
+
+footer:before {
+  content: '';
+  width: 100%;
+  height: 10px;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: -1px;
+  background-image: url(../images/sec2-bgbefore.png);
+  background-repeat: repeat-x;
+}
+
+footer img {
+  margin: 100px 0 50px;
+}
+
+footer address {
+  line-height: 2em;
+  margin-bottom: 40px;
+}
+
+footer p {
+  font-size: 14px;
+}
+
+footer i {
+  position: fixed;
+  font-size: 50px;
+  bottom: 50px;
+  right: 50px;
+  display: none;
+}
+
+main {
+  padding-top: 80px;
+}
+
+main .main-image img {
+  width: 100%;
+}
+
+main section {
+  padding: 90px 0 100px;
+  position: relative;
+}
+
+main section .inner {
+  width: 960px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+main section .inner h2 {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+main section .inner .textImage {
+  text-align: center;
+}
+
+main section .inner .text-imfo {
+  margin-right: 300px;
+}
+
+main section .inner img.illustbuilding {
+  float: left;
+}
+
+main section .inner .openingHours {
+  width: 430px;
+  float: right;
+  line-height: 40px;
+}
+
+main section .inner .openingHours ul {
+  margin: 40px 0;
+  font-size: 24px;
+}
+
+main section .inner .openingHours ul li {
+  color: #333;
+}
+
+main section .inner .openingHours ul li .opentime {
+  margin-left: 150px;
+}
+
+main section .inner .openingHours ul li .ordertime {
+  margin-left: 57px;
+}
+
+main section .inner .openingHours ul li .closetime {
+  margin-left: 140px;
+}
+
+main section .inner .openingHours ul li .holiday {
+  margin-left: 125px;
+}
+
+main section .inner .openingHours p {
+  color: #666;
+  font-size: 20px;
+}
+
+main section .inner .text-photo {
+  margin-right: 180px;
+}
+
+main section .inner figure {
+  text-align: center;
+}
+
+main section .inner .text-pay {
+  margin-right: 180px;
+}
+
+main section .inner p.center {
+  color: #333;
+  text-align: center;
+  line-height: 2em;
+  font-size: 24px;
+}
+
+main section .inner p.center strong {
+  font-size: 30px;
+  color: #e71f19;
+}
+
+main section .inner p.center span {
+  color: #1a4a9e;
+}
+
+main section img.dolphin1 {
+  position: absolute;
+  left: 100px;
+  bottom: -30px;
+  z-index: 1;
+}
+
+main section img.dolphin2 {
+  position: absolute;
+  right: 100px;
+  bottom: -30px;
+  z-index: 1;
+}
+
+main section img.illustrun {
+  position: absolute;
+  left: 80px;
+  bottom: -30px;
+  z-index: 1;
+}
+
+main .sec2 {
+  clear: both;
+  background-image: url(../images/bg2.png);
+  background-repeat: repeat;
+  position: relative;
+}
+
+main .sec2:before {
+  content: '';
+  width: 100%;
+  height: 10px;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: -1px;
+  background-image: url(../images/sec2-bgbefore.png);
+  background-repeat: repeat-x;
+}
+
+main .sec2:after {
+  content: '';
+  width: 100%;
+  height: 10px;
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  background-image: url(../images/sec2-bgafter.png);
+  background-repeat: repeat-x;
+}
+
+main .sec2 .sliderArea {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+}
+
+main .sec2 .sliderArea.w300 {
+  max-width: 300px;
+}
+
+main .sec2 .slick-slide {
+  margin: 0 5px;
+}
+
+main .sec2 .slick-slide img {
+  width: 100%;
+  height: auto;
+}
+
+main .sec2 .slick-prev, main .sec2 .slick-next {
+  z-index: 1;
+}
+
+main .sec2 .slide-arrow:before, main .sec2 .slick-next:before {
+  color: #000;
+}
+
+main .sec2 .slick-slide {
+  -webkit-transition: all ease-in-out .3s;
+  transition: all ease-in-out .3s;
+  opacity: .2;
+}
+
+main .sec2 .slick-active {
+  opacity: 1;
+}
+
+main .sec2 .slick-current {
+  opacity: 1;
+}
+
+main .sec2 .thumb .slick-slide:hover {
+  opacity: .7;
+}
+
+main .sec2 .slick-dots li button:hover:before,
+main .sec2 .slick-dots li button:focus:before {
+  opacity: 1;
+  color: green;
+  /* hover時の色を変更 */
+}
+
+main .sec2 .slick-dots li button:before {
+  font-family: 'slick';
+  font-size: 6px;
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  /* 元のcontentプロパティの値だとfont-sizeを変更した際に位置がずれてしまうので値を変更 */
+  /* content: '•'; */
+  content: '●';
+  text-align: center;
+  opacity: .25;
+  color: black;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+main .sec2 .slick-dots li.slick-active button:before {
+  opacity: 1;
+  color: #146439;
+  /* active時の色を変更 */
+}
+
+main .sec2 .far {
+  font-size: 80px;
+  color: #146439;
+  font-weight: bold;
+}
+
+main .sec2 .fa-hand-point-left {
+  position: absolute;
+  bottom: 180px;
+  left: 100px;
+  z-index: 1;
+}
+
+main .sec2 .fa-hand-point-right {
+  position: absolute;
+  bottom: 180px;
+  right: 100px;
+}
+
+main .sec2 button {
+  size: 100px;
+}
+
+#menu .menu-mainimage, #access .menu-mainimage {
+  background-color: #f2fdfa;
+  height: 250px;
+  position: relative;
+}
+
+#menu .menu-mainimage .inner, #access .menu-mainimage .inner {
+  width: 500px;
+  height: 250px;
+  margin: 0 auto;
+  position: relative;
+}
+
+#menu .menu-mainimage .inner h2, #access .menu-mainimage .inner h2 {
+  text-align: center;
+  line-height: 250px;
+  font-size: 36px;
+}
+
+#menu .menu-mainimage .inner .monstera, #access .menu-mainimage .inner .monstera {
+  position: absolute;
+  top: 45px;
+  left: 0;
+}
+
+#menu .menu-mainimage .inner img.text, #access .menu-mainimage .inner img.text {
+  position: absolute;
+  top: 60px;
+  left: 120px;
+}
+
+#menu main nav {
+  background-color: #ccc;
+  height: 60px;
+  margin-bottom: 150px;
+}
+
+#menu main nav ul {
+  overflow: hidden;
+  line-height: 58px;
+  width: 228px;
+  margin: 0 auto;
+}
+
+#menu main nav ul li {
+  float: left;
+  font-size: 24px;
+}
+
+#menu main nav ul li a {
+  text-decoration: none;
+  display: block;
+}
+
+#menu main nav ul li a:hover {
+  color: #000;
+}
+
+#menu main nav ul li.food {
+  margin-right: 60px;
+  border-bottom: 3px dotted #333;
+}
+
+#menu main nav ul li.food a {
+  color: #000;
+}
+
+#menu main section {
+  width: 960px;
+  margin: 0 auto 200px;
+  padding: 0;
+  opacity: 0;
+}
+
+#menu main section h3 {
+  font-family: 'Rubik', "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+  font-size: 60px;
+  color: #952c2b;
+  border-bottom: 5px solid #8a605f;
+  padding: 0 0 10px 20px;
+}
+
+#menu main section .inner {
+  width: 920px;
+  margin: 30px 20px 0;
+}
+
+#menu main section .inner .annotation {
+  color: #666;
+  margin-bottom: 30px;
+  line-height: 1.5em;
+}
+
+#menu main section .inner .lobAnnotation {
+  color: #e71f19;
+}
+
+#menu main section .inner .foodIllust {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+#menu main section .inner .filetmenu, #menu main section .inner .ribmenu, #menu main section .inner .lobmenu {
+  margin-left: 50px;
+}
+
+#menu main section .inner .buruburu-hover:hover {
+  -webkit-animation: hurueru .8s  infinite;
+          animation: hurueru .8s  infinite;
+}
+
+@-webkit-keyframes hurueru {
+  0% {
+    -webkit-transform: translate(0px, 2px) rotateZ(0deg);
+            transform: translate(0px, 2px) rotateZ(0deg);
+  }
+  50% {
+    -webkit-transform: translate(0px, 2px) rotateZ(-1deg);
+            transform: translate(0px, 2px) rotateZ(-1deg);
+  }
+  100% {
+    -webkit-transform: translate(0px, 2px) rotateZ(1deg);
+            transform: translate(0px, 2px) rotateZ(1deg);
+  }
+}
+
+@keyframes hurueru {
+  0% {
+    -webkit-transform: translate(0px, 2px) rotateZ(0deg);
+            transform: translate(0px, 2px) rotateZ(0deg);
+  }
+  50% {
+    -webkit-transform: translate(0px, 2px) rotateZ(-1deg);
+            transform: translate(0px, 2px) rotateZ(-1deg);
+  }
+  100% {
+    -webkit-transform: translate(0px, 2px) rotateZ(1deg);
+            transform: translate(0px, 2px) rotateZ(1deg);
+  }
+}
+
+#menu main section .inner .cheesemenu {
+  margin-left: 70px;
+}
+
+#menu main section .inner .lobSingle {
+  margin-bottom: 40px;
+}
+
+#menu main section .inner .lobSteakmenu {
+  margin-left: 150px;
+}
+
+#menu main section .inner .cheeseinner {
+  width: 430px;
+  float: left;
+}
+
+#menu main section .inner .cheeseinner .cheeseHamburger {
+  margin-bottom: 30px;
+}
+
+#menu main section .inner .childinner {
+  float: right;
+  margin-top: 240px;
+}
+
+#menu main section .inner .soup {
+  clear: both;
+  display: inline-block;
+  margin-top: 30px;
+}
+
+#menu main section .inner .cookname {
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+#menu main section .inner .cookname .price {
+  color: #952c2b;
+}
+
+#menu main section .inner .cookname .translation {
+  font-size: 16px;
+}
+
+#menu main section .inner .cookname .annotation {
+  font-size: 18px;
+}
+
+#menu main section .inner .bottomP {
+  margin-bottom: 60px;
+}
+
+#menu main section .inner h4 {
+  font-size: 20px;
+  border-bottom: 2px solid #8a605f;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+}
+
+#menu main section .inner .howToBake {
+  width: 260px;
+  float: left;
+  margin-right: 70px;
+  margin-bottom: 50px;
+  font-size: 20px;
+}
+
+#menu main section .inner .howToBake h5 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #952c2b;
+  font-weight: bold;
+}
+
+#menu main section .inner .howToBake p {
+  color: #666;
+  line-height: 1.2em;
+}
+
+#menu main section .inner .jikkuri {
+  margin-right: 0;
+}
+
+#menu main section .inner .last {
+  clear: both;
+  font-size: 14px;
+}
+
+#menu main section .inner .ribAnnotation {
+  overflow: hidden;
+  border-top: 2px solid #8a605f;
+}
+
+#menu main section .inner .ribAnnotation .ribInner {
+  font-size: 18px;
+  width: 430px;
+  float: left;
+  margin-top: 20px;
+}
+
+#menu main section .inner .eg {
+  line-height: 24px;
+  margin-right: 60px;
+  font-family: 'Rubik', "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+}
+
+#menu main section .inner .jp {
+  line-height: 28px;
+}
+
+#menu main section .inner .jp span {
+  color: #e71f19;
+}
+
+#menu main section .inner figure {
+  float: right;
+  margin-right: 50px;
+}
+
+#menu main section .inner .bottomnone {
+  margin-bottom: 0;
+}
+
+#menu main section.on {
+  opacity: 1;
+}
+
+#menu main #filetMignon .allergen, #menu main #ribSteak .allergen, #menu main #lobster .allergen, #menu main #lobsterSteak .allergen {
+  position: absolute;
+  top: -10px;
+  right: 20px;
+}
+
+#menu main #filetMignon {
+  position: relative;
+}
+
+#menu main #filetMignon .beef {
+  position: absolute;
+  top: 90px;
+  right: 0;
+}
+
+#menu main #filetMignon .fm-allergen {
+  position: absolute;
+  bottom: 535px;
+  right: 40px;
+}
+
+#menu main #filetMignon .palmTree {
+  position: absolute;
+  bottom: 215px;
+  right: 60px;
+}
+
+#menu main #ribSteak {
+  position: relative;
+}
+
+#menu main #ribSteak .beef {
+  position: absolute;
+  top: 90px;
+  right: 0;
+}
+
+#menu main #ribSteak .rs-allergen {
+  position: absolute;
+  bottom: 280px;
+  right: 40px;
+}
+
+#menu main #ribSteak .bicycle {
+  position: absolute;
+  bottom: 140px;
+  right: 110px;
+}
+
+#menu main #lobster {
+  position: relative;
+}
+
+#menu main #lobster .lobSet-allergen {
+  position: absolute;
+  bottom: 400px;
+  left: 400px;
+}
+
+#menu main #lobster .lobSingle-allergen {
+  position: absolute;
+  bottom: 15px;
+  left: 400px;
+}
+
+#menu main #lobsterSteak {
+  position: relative;
+}
+
+#menu main #lobsterSteak .specialMenu {
+  position: absolute;
+  top: 100px;
+  right: 100px;
+}
+
+#menu main #lobsterSteak .lobSteak-allergen {
+  position: absolute;
+  bottom: 300px;
+  right: 110px;
+}
+
+#menu main #cheese {
+  margin-bottom: 150px;
+  position: relative;
+}
+
+#menu main #cheese .haveANiceDay {
+  position: absolute;
+  bottom: 470px;
+  right: 200px;
+}
+
+#menu main #cheese .chs-allergen {
+  position: absolute;
+  top: 850px;
+  right: 200px;
+}
+
+#menu main #cheese .ch-allergen {
+  position: absolute;
+  bottom: 265px;
+  left: 320px;
+}
+
+#menu main #cheese .soup-allergen {
+  position: absolute;
+  bottom: 125px;
+  left: 220px;
+}
+
+#menu main #cheese .fPotato-allergen {
+  position: absolute;
+  bottom: 20px;
+  left: 310px;
+}
+
+#menu main #cheese .cLunch-allergen {
+  position: absolute;
+  bottom: 10px;
+  right: 195px;
+}
+
+#menu main #cheese .girl {
+  position: absolute;
+  bottom: -150px;
+  right: -37px;
+}
+
+#access section {
+  width: 960px;
+  margin: 100px auto 100px;
+  padding: 0;
+  text-align: center;
+  position: relative;
+}
+
+#access section img {
+  margin-bottom: 100px;
+}
+
+#access section iframe {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+#access section p {
+  margin-bottom: 60px;
+  font-size: 24px;
+}
+
+#access section .woman {
+  position: absolute;
+  top: 50px;
+  right: 80px;
+}
+
+#access section .man1 {
+  position: absolute;
+  top: 510px;
+  left: 80px;
+}
+
+#access section .walkingDog {
+  position: absolute;
+  bottom: -210px;
+  left: 60px;
+  z-index: 1;
+}
+
+#access section .man2 {
+  position: absolute;
+  bottom: -300px;
+  right: 100px;
+  z-index: 1;
+}
+
+.bx-wrapper {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+  left: 0;
+  background-color: transparent;
+  margin: 0 auto;
+}
+
+.start {
+  background: #FFF;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 9000;
+  text-align: center;
+}
+
+.start p {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: none;
+  z-index: 9999;
+  width: 280px;
+}
+/*# sourceMappingURL=style.css.map */
